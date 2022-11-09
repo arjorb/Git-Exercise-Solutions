@@ -243,3 +243,201 @@ To https://github.com/arjorb/Git-Exercise-Solutions.git
  * [new branch]      ft/bundle-2 -> ft/bundle-2
 
 ```
+
+## <span style="color:#79A7D3"> Bundle 3</span>
+
+### <span style="color:#EEA47FFF">Exercise 1</span>
+
+```bash
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git checkout -b ft/team-page
+Switched to a new branch 'ft/team-page'
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git add team.html
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git commit -m "adding the team page"
+[ft/team-page f6f7c2d] adding the team page
+ 1 file changed, 16 insertions(+)
+ create mode 100644 team.html
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git push origin ft/team-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 627 bytes | 627.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/arjorb/Git-Exercise-Solutions/pull/new/ft/team-page
+remote:
+To https://github.com/arjorb/Git-Exercise-Solutions.git
+ * [new branch]      ft/team-page -> ft/team-page
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git checkout -b ft/contact-page
+Switched to a new branch 'ft/contact-page'
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git checkout ft/team-page
+Switched to branch 'ft/team-page'
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git log
+commit f6f7c2d95e8c6b18d9aedc65fca44d9be8478e6a (HEAD -> ft/team-page, origin/ft/team-page)
+Author: John U <arjorb@gmail.com>
+Date:   Wed Nov 9 17:34:35 2022 +0200
+
+    adding the team page
+
+commit d223162d63bdb9d2d4cdff05d3d756db0885810c (origin/main, main, ft/contact-page)
+Author: John U <arjorb@gmail.com>
+Date:   Wed Nov 9 16:23:52 2022 +0200
+
+    Add the services that we offer on Monday
+
+commit b1103ce05032aad819c6234cde5c856316bc8ddd
+Merge: 940a5ed 9afe941
+Author: Chrissie <chrissiemhrk@gmail.com>
+Date:   Wed Nov 9 12:07:21 2022 +0200
+
+    Merge pull request #1 from arjorb/ft/bundle-2
+
+    Git Exercise Solution Bundle 2 Exercise 1
+
+commit 9afe941620d60135eec30d58b39f01fd54494830 (origin/ft/bundle-2, ft/bundle-2)
+Author: John U <arjorb@gmail.com>
+Date:   Wed Nov 9 10:15:26 2022 +0200
+
+    done working on exercise 1 bundle 2
+
+commit c7bd139533f8e57936838d46ee1b0475aa4de4e1
+Author: John U <arjorb@gmail.com>
+Date:   Wed Nov 9 10:10:53 2022 +0200
+
+    add the services page
+
+commit 830660e9edc155aae868aa211f3665b1699e9b23 (origin/dev, dev)
+Author: John U <arjorb@gmail.com>
+Date:   Wed Nov 9 09:02:37 2022 +0200
+
+    done exercise 2 on bundle 1
+
+commit 85957ff4948ded33dc9d0b4f1cd3cb804970bb1f
+Author: John U <arjorb@gmail.com>
+Date:   Wed Nov 9 08:54:07 2022 +0200
+
+    done working on home and about pages
+
+commit a68b246243f7c1b78bdb3273a6c53f0b101246c8
+Author: John U <arjorb@gmail.com>
+Date:   Wed Nov 9 08:40:51 2022 +0200
+
+    done exercise 1 on bundle 1
+
+commit 940a5ed8eb24d0b02df97072c77ccba896de244e
+Author: John U <arjorb@gmail.com>
+Date:   Wed Nov 9 07:58:03 2022 +0200
+
+    initial commit
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git cherry-pick f6f7c2d95e8c6b18d9aedc65fca44d9be8478e6a
+[ft/contact-page c02c846] adding the team page
+ Date: Wed Nov 9 17:34:35 2022 +0200
+ 1 file changed, 16 insertions(+)
+ create mode 100644 team.html
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git add .
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git commit -m "adding the contact page"
+[ft/contact-page 8b35a73] adding the contact page
+ 1 file changed, 16 insertions(+)
+ create mode 100644 contact.html
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git push origin ft/contact-page
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 887 bytes | 443.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/arjorb/Git-Exercise-Solutions/pull/new/ft/contact-page
+remote:
+To https://github.com/arjorb/Git-Exercise-Solutions.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git checkout -b ft/faq-page
+Switched to a new branch 'ft/faq-page'
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git add .
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git commit -m "adding the faq page"
+[ft/faq-page 2043af3] adding the faq page
+ 1 file changed, 16 insertions(+)
+ create mode 100644 faq.html
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git push origin ft/faq-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 627 bytes | 627.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/arjorb/Git-Exercise-Solutions/pull/new/ft/faq-page
+remote:
+To https://github.com/arjorb/Git-Exercise-Solutions.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git log
+commit 2043af3152164d142dde472c4180dd76be1ccb22 (HEAD -> ft/faq-page, origin/ft/faq-page)
+Author: John U <arjorb@gmail.com>
+Date:   Wed Nov 9 18:01:31 2022 +0200
+
+    adding the faq page
+
+commit 8b35a73657ac02a771c9e63d69c358263ae41782 (origin/ft/contact-page, ft/contact-page)
+Author: John U <arjorb@gmail.com>
+Date:   Wed Nov 9 17:56:32 2022 +0200
+
+    adding the contact page
+
+commit c02c846496a541a4f2442f3d74b477b94beb117b
+Author: John U <arjorb@gmail.com>
+Date:   Wed Nov 9 17:34:35 2022 +0200
+
+    adding the team page
+
+commit d223162d63bdb9d2d4cdff05d3d756db0885810c (origin/main, main)
+Author: John U <arjorb@gmail.com>
+Date:   Wed Nov 9 16:23:52 2022 +0200
+
+    Add the services that we offer on Monday
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git revert c02c846496a541a4f2442f3d74b477b94beb117b
+[ft/faq-page 9770628] Revert "adding the team page"
+ 1 file changed, 16 deletions(-)
+ delete mode 100644 team.html
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git push origin ft/faq-page
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 269 bytes | 269.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/arjorb/Git-Exercise-Solutions.git
+   2043af3..9770628  ft/faq-page -> ft/faq-page
+
+
+```
