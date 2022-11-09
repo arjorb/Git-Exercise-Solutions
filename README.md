@@ -441,3 +441,80 @@ To https://github.com/arjorb/Git-Exercise-Solutions.git
 
 
 ```
+
+### <span style="color:#EEA47FFF">Exercise 2</span>
+
+```bash
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   home.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git add .
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git commit -m "adding some changes on the home page"
+[main 107a164] adding some changes on the home page
+ 1 file changed, 1 insertion(+)
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git push origin main
+fatal: unable to access 'https://github.com/arjorb/Git-Exercise-Solutions.git/': Could not resolve host: github.com
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git push origin main
+fatal: unable to access 'https://github.com/arjorb/Git-Exercise-Solutions.git/': Could not resolve host: github.com
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 344 bytes | 344.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/arjorb/Git-Exercise-Solutions.git
+   d223162..107a164  main -> main
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git add .
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git commit -m "adding some changes after rebase"
+[ft/home-page-redesign 9ddf25c] adding some changes after rebase
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ push origin ft/home-page-redesign
+bash: push: command not found
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git push origin ft/home-page-redesign
+Enumerating objects: 20, done.
+Counting objects: 100% (20/20), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (17/17), 3.42 KiB | 500.00 KiB/s, done.
+Total 17 (delta 9), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (9/9), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/arjorb/Git-Exercise-Solutions/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/arjorb/Git-Exercise-Solutions.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+
+```
