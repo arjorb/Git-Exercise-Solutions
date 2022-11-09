@@ -211,3 +211,35 @@ HEAD is now at 85957ff done working on home and about pages
 ## <span style="color:#79A7D3"> Bundle 2</span>
 
 ### <span style="color:#EEA47FFF">Exercise 1</span>
+
+```bash
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git checkout - ft/bundle-2
+error: pathspec '-' did not match any file(s) known to git
+error: pathspec 'ft/bundle-2' did not match any file(s) known to git
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git add .
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git commit -m "add the services page"
+[ft/bundle-2 c7bd139] add the services page
+ 2 files changed, 20 insertions(+), 1 deletion(-)
+ create mode 100644 services.html
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git push origin ft/bundle-2
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 753 bytes | 753.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/arjorb/Git-Exercise-Solutions/pull/new/ft/bundle-2
+remote:
+To https://github.com/arjorb/Git-Exercise-Solutions.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+
+```
