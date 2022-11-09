@@ -206,5 +206,8 @@ Dropped refs/stash@{0} (1a14f23f77dd30a05f436087e8882e41ca14a1f9)
 Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git reset --hard
 HEAD is now at 85957ff done working on home and about pages
 
-
 ```
+
+## <span style="color:#79A7D3"> Bundle 2</span>
+
+### <span style="color:#EEA47FFF">Exercise 1</span>
