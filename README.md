@@ -283,5 +283,75 @@ remote: Resolving deltas: 100% (11/11), done.
 To https://github.com/arjorb/Git-Exercise-Solutions-2.git
  * [new branch]      main -> main
 
+```
+
+## <span style="color:#79A7D3"> Bundle 5</span>
+
+### <span style="color:#EEA47FFF">Exercise 1</span>
+
+```bash
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git status
+On branch ft/squashing
+nothing to commit, working tree clean
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git pull
+Already up to date.
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git add .
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git commit -m "renaming the home page to index page"
+[main 60bdbef] renaming the home page to index page
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename home.html => index.html (100%)
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 241 bytes | 241.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/arjorb/Git-Exercise-Solutions.git
+   a7b0a6d..60bdbef  main -> main
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$
+```
+
+### <span style="color:#EEA47FFF">Exercise 2</span>
+
+```bash
+
+Jojos-MacBook-Pro:git-cafe-exercise arjo$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Jojos-MacBook-Pro:git-cafe-exercise arjo$ git add index.html
+
+Jojos-MacBook-Pro:git-cafe-exercise arjo$ git commit -m"change the title to welcome to our restaurent"
+[main 466c073] change the title to welcome to our restaurent
+ 1 file changed, 399 insertions(+), 239 deletions(-)
+
+Jojos-MacBook-Pro:git-cafe-exercise arjo$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.57 KiB | 803.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/arjorb/git-cafe-exercise.git
+   d1d3f9c..466c073  main -> main
 
 ```
