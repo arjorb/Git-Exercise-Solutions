@@ -243,3 +243,45 @@ To https://github.com/arjorb/Git-Exercise-Solutions.git
  * [new branch]      ft/bundle-2 -> ft/bundle-2
 
 ```
+
+## <span style="color:#79A7D3"> Bundle 4</span>
+
+### <span style="color:#EEA47FFF">Exercise 1</span>
+
+```bash
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git remote add git-copy https://github.com/arjorb/Git-Exercise-Solutions-2.git
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git add .
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git commit -m "adding the h1 tag after git-copy and create a new repo"
+[main 1d3e791] adding the h1 tag after git-copy and create a new repo
+ 1 file changed, 3 insertions(+)
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 410 bytes | 410.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/arjorb/Git-Exercise-Solutions.git
+   107a164..1d3e791  main -> main
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git push git-copy
+Enumerating objects: 30, done.
+Counting objects: 100% (30/30), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (28/28), done.
+Writing objects: 100% (30/30), 5.55 KiB | 299.00 KiB/s, done.
+Total 30 (delta 11), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (11/11), done.
+To https://github.com/arjorb/Git-Exercise-Solutions-2.git
+ * [new branch]      main -> main
+
+
+```
