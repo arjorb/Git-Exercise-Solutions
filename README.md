@@ -285,3 +285,88 @@ To https://github.com/arjorb/Git-Exercise-Solutions-2.git
 
 
 ```
+
+### <span style="color:#EEA47FFF">Exercise 2</span>
+
+```bash
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git add footer.html
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git commit -m"adding the footer"
+[ft/footer 70a4caf] adding the footer
+ 1 file changed, 16 insertions(+)
+ create mode 100644 footer.html
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git status
+On branch ft/footer
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   footer.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git add footer.html
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git commit -m"adding the copyright to the footer"
+[ft/footer a8902ba] adding the copyright to the footer
+ 1 file changed, 1 insertion(+)
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git push origin ft/footer
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 935 bytes | 935.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/arjorb/Git-Exercise-Solutions/pull/new/ft/footer
+remote:
+To https://github.com/arjorb/Git-Exercise-Solutions.git
+ * [new branch]      ft/footer -> ft/footer
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git merge --squash ft/footer
+Updating a7b0a6d..a8902ba
+Fast-forward
+Squash commit -- not updating HEAD
+ footer.html | 17 +++++++++++++++++
+ 1 file changed, 17 insertions(+)
+ create mode 100644 footer.html
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git commit -m "adding footer to ft/squashing after squash ft/footer"
+[ft/squashing 92f568a] adding footer to ft/squashing after squash ft/footer
+ 1 file changed, 17 insertions(+)
+ create mode 100644 footer.html
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git status
+On branch ft/squashing
+nothing to commit, working tree clean
+
+Jojos-MacBook-Pro:Gym-Git-Exercise-Solutions arjo$ git push origin ft/squashing
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 679 bytes | 679.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/arjorb/Git-Exercise-Solutions/pull/new/ft/squashing
+remote:
+To https://github.com/arjorb/Git-Exercise-Solutions.git
+ * [new branch]      ft/squashing -> ft/squashing
+
+```
